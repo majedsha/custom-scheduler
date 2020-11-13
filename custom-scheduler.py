@@ -12,7 +12,7 @@ from kubernetes import client, config, watch
 config.load_kube_config()
 v1 = client.CoreV1Api()
 
-scheduler_name = "foobar"
+scheduler_name = "custom-scheduler"
 
 def nodes_available():
     ready_nodes = []
